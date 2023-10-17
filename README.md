@@ -1,2 +1,2 @@
-# javascript.js
+# javascript
 first_repository
