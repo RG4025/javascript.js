@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+       
+    
+    </style>
+</head>
+<body id="body_color">
+    
+    <select id="select_color" onchange="back_color_one()">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+
+
+    <script>
+
+        function back_color_one(){
+            const color = document.getElementById("select_color").value;
+
+            document.getElementById("body_color").style.backgroundColor = color;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //    const back_color_one = (col1, col2,col3) =>{
+    //    var col1 =  document.getElementById(body_color).style.backgroundColor="red";
+    //    var col2 =  document.getElementById(body_color).style.backgroundColor="blue";
+    //    var col3 =  document.getElementById(body_color).style.backgroundColor="green";
+    //    }
+
+    //    if(onclick == change_red){
+    //         document.write(back_color_one(col1));
+    //    }
+    //    else if(onclick == change_blue){
+    //     document.write(back_color_one(col2));
+    //    }
+    //    else if(onclick == change_green){
+    //     document.write(back_color_one(col3));
+    //    }
+
+
+    </script>
+</body>
+</html>

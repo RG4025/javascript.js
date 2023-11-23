@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    
+    <script>
+        let promises = new Promise(function (resolve , reset){
+            alert("hello");
+            resolve(34);
+        })
+
+        console.log("hello one");
+
+        setTimeout( function(){
+            console.log("Hello two times 2 it appeared in the last because it has the set time function : ");
+        }, 2000);
+
+        console.log("Hello for three times 3 :");
+
+        console.log(promises);
+    </script>
+
+</body>
+</html>

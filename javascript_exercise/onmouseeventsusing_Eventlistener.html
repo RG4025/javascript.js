@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .firstdiv{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="firstdiv">
+
+    </div>
+
+    <div>
+        <input type="text" class="onfocus" placeholder="Enter Name">
+
+    </div>
+
+    
+    <script>
+        
+        document.querySelector('input').addEventListener('focus', () =>{
+            document.getElementsByClassName('onfocus')[0].style.backgroundColor= "red";
+            document.getElementsByClassName('onfocus')[0].style.color= "white";
+        })
+
+        document.querySelector('div').addEventListener('mouseover', () =>{
+            document.getElementsByClassName('firstdiv')[0].style.backgroundColor = "black";
+        })
+
+        document.querySelector('div').addEventListener('mouseout', () =>{
+            document.getElementsByClassName('firstdiv')[0].style.backgroundColor = "red";
+        })
+
+        
+    </script>
+</body>
+</html>

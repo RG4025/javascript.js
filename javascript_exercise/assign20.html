@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1>innerhtml</h1>
+    <div id="first">
+
+        <div>
+            <button id="clickbut">click to add innerhtml</button>
+        </div>
+    </div>
+
+
+    <h1>innertext</h1>
+    <div id="second">
+        
+
+        <div>
+            <button id="clicktext">clivk to add innertext</button>
+        </div>
+    </div>
+    <script>
+
+
+
+
+        document.getElementById('clickbut').onclick = () => {
+            const ele = document.getElementById('first');
+
+            ele.innerHTML = `<h1> hii from innerhtml </h1> <br> <h2> hii from innerhtml </h2> <br> <h3> hii from innerhtml </h3> <br> <h4> hii from innerhtml </h4>`;
+        }
+
+        document.getElementById('clicktext').onclick = () => {
+            const element = document.getElementById('second');
+            element.innerText = "The innertext is added";
+        }
+
+
+    </script>
+
+</body>
+
+</html>

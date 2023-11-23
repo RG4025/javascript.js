@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random number generator</title>
+</head>
+
+<body>
+
+
+    <script>
+
+                const min = 1;
+                const max = 100;
+                const random = (Math.floor(Math.random() * (max - min )) + 1);
+        
+        
+                // const random = (Math.floor(Math.random() * 100) + 1);
+                console.log(random);
+                // const number = Math.floor(prompt("Enter your number.."));
+        
+        
+                // const number = Math.floor(prompt("Enter your number.."));
+                // if (number != ' ' && number <= 100) {
+                //     var attempts = 0;
+        
+        
+                let runagain = true;
+                    do {
+                        const number = Math.floor(prompt("Enter your number.."));
+                        if (number != ' ' && number <= 100) {
+                            var attempts = 100;
+                            if (number === random) {
+                                console.log(`Congrats champ your number is ${number} correct!`);
+                                attempts -= 1;
+                                // console.log(`And your score is ${attempts}`);
+                                
+                            }
+                            else if (number > random) {
+                                attempts -= 1;
+                                console.log("Soory Your number is greater than the Random number..");
+                                // const number = Math.floor(prompt("Enter your number.."));
+                                
+                            }
+                            else if (number < random) {
+                                attempts -= 1;
+                                console.log("Soory Your number is Less than the Random number..");
+                                // const number = Math.floor(prompt("Enter your number.."));
+                                
+                            }
+                            runagain = confirm("Do you wont to run again.. type ok");
+                            
+                        } else {
+                            console.log("please enter the number in between 100..")
+                        }
+                        attempts -= 1;
+                        
+                    } while (runagain);
+                
+                // } else {
+                //     console.log("please enter the number in between 100..")
+                // }
+        
+        /*
+        let random = Math.floor((Math.random() * 100) + 1);
+        // console.log(random)
+        let score = 0;
+        let input;
+
+        while (input != random) {
+            input = Number.parseInt(prompt("Enter the number .."));
+
+            if (input != random) {
+                console.log("Wrong! Try again.")
+            }
+
+            if (random > input) {
+                console.log("The Number is bigger than " + input)
+            }
+            else if (random < input) {
+                console.log("The Number is smaller than " + input)
+            }
+            score += 1;
+        }
+        console.log("Congrats Champ!")
+        console.log(`You scored ${100 - score} points.`)
+*/
+    </script>
+</body>
+
+</html>

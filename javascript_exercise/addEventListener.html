@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .firstclass{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <div class="firstclass">
+
+        </div>
+
+        <select id="change_color">
+            <option value="red">red</option>
+            <option value="black">black</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+        </select>
+        
+    </div>
+
+    
+
+    <script>    
+
+        // const color = document.que   rySelectorAll('select').value ;
+        
+        document.querySelector('select').addEventListener('change', () =>{
+            const color = document.querySelector('#change_color');
+           document.getElementsByClassName('firstclass')[0].style.backgroundColor = color.value;
+           console.log(color.value);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adjacent_html</title>
+</head>
+<body>
+
+    <div id="first">
+        i am workimg on the insert adjacent html
+    </div>
+    <script>
+
+        first.insertAdjacentHTML ('beforebegin' , '<h3 class="first_class"> Adding the html to previious one </h3>');
+        first.insertAdjacentHTML ('beforeend' , '<h3 class="first_class"> Adding the html to previious two </h3>');
+        first.insertAdjacentHTML ('afterbegin' , '<h3 class="first_class"> Adding the html to previious three </h3>');
+        first.insertAdjacentHTML ('afterend' , '<h3 class="first_class"> Adding the html to previious four </h3>');
+
+        // after adding the remove method in the elment it wiil only remove the original and beforeend and afterbegin content only and not reemoves the beforebegin and afterend remain on the webpage
+        first.remove();
+
+
+    </script>
+    
+</body>
+</html>

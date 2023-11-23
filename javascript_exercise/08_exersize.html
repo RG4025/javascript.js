@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #first-div{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        } */
+        .sec-one{
+            background-color: aqua;
+        }
+
+        .sec-two{
+            width:200px;
+            height: 200px;
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+<!-- 
+    <div id="first-div">
+
+    </div>
+    <button type="button" onclick="first_fun()"> click to hide the div</button> -->
+    <div id="second_div" class="sec-one sec-two">
+
+    </div>
+    <div id="third_div">
+
+    </div>
+    <div id="fourth_div">
+
+    </div>
+    <div id="fifth_div">
+
+    </div>
+
+    <script>
+        // function first_fun(){
+        //      document.getElementById("first-div").style.display="none";
+        // }
+
+        // function second_fun(){
+        //     document.getElementById("second_div")
+        // }
+
+        setInterval(function(){
+            document.querySelector("#second_div").classList.toggle("sec-two");
+
+        }, 300);
+
+    </script>
+</body>
+</html>

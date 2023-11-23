@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html class</title>
+    <style>
+        .yellow{
+            background-color: yellow;
+            color: black;
+        }
+        .red{
+            background-color: red;
+            /* color: white; */
+
+        }
+        .text_color{
+            color:black;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="red">
+        Hello There!...
+    </div>
+    <script>
+
+        first.className = ('text_color red');
+       console.log(first.classList);
+        // first.classList.remove('red');
+        first.classList.add('red');
+    </script>
+</body>
+</html>

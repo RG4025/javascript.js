@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div_one {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        #div_two {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        #div_three {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div_one" onmouseenter="back_color_one()" onmouseleave="back_color_two()">
+
+    </div>
+    <div id="div_two">
+
+    </div>
+    <div id="div_three">
+
+    </div>
+
+    <script>
+        function back_color_one(){
+            document.getElementById("div_one").style.backgroundColor = "red";
+
+        }
+
+        function back_color_two(){
+            document.getElementById("div_one").style.backgroundColor = "transparent";
+
+        }
+    </script>
+</body>
+
+</html>

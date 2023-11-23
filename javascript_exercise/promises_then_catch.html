@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>then&catch</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        let promise_one = new Promise ((resolve , reject) => {
+            console.log("The promise one is pending...");
+            setTimeout(() => {
+                console.log("The promise was resolved..");
+                resolve(true);
+
+            },5000);
+        });
+
+        let promise_two = new Promise((rsolve, reject) =>{
+            console.log("The promise two is pending...");
+            setTimeout(() => {
+                console.log("The promise was rejected...");
+                reject(new Error("Some error was accured..."));
+            }, 5000);
+        });
+
+
+        // the value is used to see the true value and catch is used to catch the error from this programm
+        promise_one.then((value) =>{
+            console.log(value);
+        }, (error) =>{
+            console.log(error);
+        });
+
+        promise_two.then((value) =>{
+            console.log(value);
+        }, (error) =>{
+            console.log(error);
+        });
+
+    </script>
+</body>
+</html>
