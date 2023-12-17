@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-
-    <script>
 
         // the first comma creates the empty array but the last comma is igored .
-        // const arr = [, "name", "number ", , " address", ,]
-        // console.log(arr.length);
+        const arr = [, "name", "number ", , " address", ,]
+        console.log(arr.length);
 
 
 
@@ -128,9 +116,3 @@
         });
 
         */
-
-    </script>
-
-</body>
-
-</html>
