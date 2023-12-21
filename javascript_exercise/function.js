@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>function</title>
-</head>
-<body>
-    <script>
+
+    //  Working with functions 
+
+
         // const matheqationadd = (x , y) => {
         //     return x + y ;
         // }
@@ -96,7 +91,4 @@
 
         document.write("The reminder of the " + num1 + " And " + num2 + " is : " , fun_Math( num1 , num2 ));
         
-    </script>
-
-</body>
-</html>
+   
